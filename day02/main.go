@@ -57,12 +57,15 @@ func main() {
 }
 
 func canBeMadeSafe(levels []int) bool {
+	// Create a single reusable slice
+	modified := make([]int, len(levels)-1)
+
 	// Try removing each level one at a time
 	for i := 0; i < len(levels); i++ {
-		// Create a new slice without the current level
-		modified := make([]int, 0, len(levels)-1)
-		modified = append(modified, levels[:i]...)
-		modified = append(modified, levels[i+1:]...)
+		// Copy elements before the removed index
+		copy(modified[:i], levels[:i])
+		// Copy elements after the removed index
+		copy(modified[i:], levels[i+1:])
 
 		if isSafe(modified) {
 			return true
