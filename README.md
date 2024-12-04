@@ -21,6 +21,14 @@ Each `dayXX` folder contains:
 2. Add puzzle description to `puzzle.md` and input to `input`
 
 3. Use Cursor to help implement the solution in `solution.go`
+    - Example prompts:
+      ```
+      I have added part one of the dayXX puzzle to puzzle.md, please add test input and expected result from part 1, and then solve part 1.
+
+      I have added part two of the dayXX puzzle to puzzle.md, please add test input and expected result from part 2, and then solve part 2.
+
+      Please update prompts.md with a summary of this session and the solution.
+      ```
 
 4. Run tests and solution:
    ```sh
