@@ -48,6 +48,15 @@ startLine: 87
 endLine: 132
 ```
 
+## Code Stats
+- Lines of code: ~200 lines
+- Number of prompts needed: 5 total
+- Number of iterations to solution: 6 total
+  - Part 1: 1 iteration (worked first try)
+  - Part 2: 5 iterations
+    - 2 iterations trying to fix incorrect test input
+    - 3 iterations fixing pattern validation logic
+
 ## Learnings
 - What worked well:
   - Separating test cases for part 1 and 2
@@ -56,13 +65,13 @@ endLine: 132
 - Ideas for future improvements:
   - Could potentially cache results for overlapping patterns
   - Might benefit from more descriptive error messages
+- Key lessons:
+  - Importance of verifying test input before fixing implementation
+  - Value of separate test cases for each part when they use different examples
+  - Visual representation of patterns helps catch logical errors
 
 ## Time Analysis
 - Time spent on prompt engineering: ~5 minutes
 - Time spent on implementation: ~15 minutes
 - Additional time fixing pattern validation: ~10 minutes
-
-## Code Stats
-- Lines of code: ~200 lines
-- Number of prompts needed: 5 total
-- Number of iterations to solution: 3 (main implementation + 2 fixes)
+- Time spent debugging incorrect test case: ~5 minutes
